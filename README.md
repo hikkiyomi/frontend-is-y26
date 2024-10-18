@@ -1,3 +1,4 @@
-# Portfolio
+# Портфолио
+Михаил Мефодьев M3300
 
-A set of laboratory works of the web programming course @ Itmo University
+Сборник лабораторных работ по курсу Web-разработки, осенний семестр 2024 г.
