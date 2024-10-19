@@ -8,60 +8,83 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">logo</a>
+    <header class="header">
+      <nav class="header__navigation">
+        <a
+          class="header__navigation-logo header__navigation-item"
+          href="index.html"
+          >logo</a
+        >
       </nav>
 
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="uses.html">uses</a>
+      <nav class="header__navigation">
+        <a
+          class="header__navigation-about header__navigation-item"
+          href="about.html"
+          >about</a
+        >
+        <a
+          class="header__navigation-projects header__navigation-item"
+          href="projects.html"
+          >projects</a
+        >
+        <a
+          class="header__navigation-uses header__navigation-item"
+          href="uses.html"
+          >uses</a
+        >
       </nav>
     </header>
 
-    <main>
-      <h1>What I use</h1>
+    <main class="main">
+      <h1 class="main__title">What I use</h1>
 
-      <section class="editors">
-        <h2>Editors & IDEs</h2>
-        <ul class="editors-list">
-          <li>
+      <section class="main__section">
+        <h2 class="main__section-title">Editors & IDEs</h2>
+        <ul class="main__section-editors">
+          <li class="main__section-editors-item">
             Rider, Goland and other Jetbrains IDEs. For developing heavy
             products.
           </li>
-          <li>
+          <li class="main__section-editors-item">
             Visual Studio Code with a bunch of extensions. For developing
             lightweight products.
           </li>
-          <li>Neovim. For me myself.</li>
+          <li class="main__section-editors-item">Neovim. For me myself.</li>
         </ul>
       </section>
 
-      <section class="terminals">
-        <h2>Terminal</h2>
-        <ul class="terminals-list">
-          <li>Kitty. Because it is really convenient!</li>
-          <li>Alacritty. Used in past.</li>
-          <li>
+      <section class="main__section">
+        <h2 class="main__section-title">Terminals</h2>
+        <ul class="main__section-terminals">
+          <li class="main__section-terminals-item">
+            Kitty. Because it is really convenient!
+          </li>
+          <li class="main__section-terminals-item">Alacritty. Used in past.</li>
+          <li class="main__section-terminals-item">
             Tmux! Not really a terminal but I love the concept of multiplexing.
           </li>
         </ul>
       </section>
 
-      <section class="operating-systems">
-        <h2>Operating Systems</h2>
-        <ul>
-          <li>Windows. For regular tasks and games.</li>
-          <li>
+      <section class="main__section">
+        <h2 class="main__section-title">Operating Systems</h2>
+        <ul class="main__section-os">
+          <li class="main__section-os-item">
+            Windows. For regular tasks and games.
+          </li>
+          <li class="main__section-os-item">
             Arch Linux <del> <sub>(btw)</sub></del>
             For developing.
           </li>
         </ul>
       </section>
-      <aside>
-        <p>I want to try NixOS in the future. But for now here's the cow:</p>
-        <pre>
+
+      <aside class="main__aside">
+        <p class="main__aside-item">
+          I want to try NixOS in the future. But for now here's the cow:
+        </p>
+        <pre class="main__aside-item">
      ________________
     < I USE ARCH BTW >
      ----------------
@@ -75,9 +98,13 @@
       </aside>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/wawowewo">telegram</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a
+          class="footer__navigation-telegram footer__navigation-item"
+          href="https://t.me/wawowewo"
+          >telegram</a
+        >
       </nav>
     </footer>
   </body>
