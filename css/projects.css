@@ -1,0 +1,15 @@
+.main__aside-code {
+  background-color: #faf6e2;
+  color: #f06060;
+}
+
+.main__aside-code code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+
+.main__section {
+  padding: 5px;
+  border-style: outset;
+  margin-bottom: 10px;
+}

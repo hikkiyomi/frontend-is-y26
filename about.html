@@ -5,68 +5,97 @@
     <meta name="keywords" content="github,portfolio,frontend,about" />
     <meta name="description" content="about page" />
     <title>wawowewo @ about</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">logo</a>
-      </nav>
-
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="uses.html">uses</a>
+    <header class="header">
+      <nav class="header__navigation">
+        <a
+          class="header__navigation-logo header__navigation-item"
+          href="index.html"
+          >logo</a
+        >
+        <a
+          class="header__navigation-about header__navigation-item"
+          href="about.html"
+          >about</a
+        >
+        <a
+          class="header__navigation-projects header__navigation-item"
+          href="projects.html"
+          >projects</a
+        >
+        <a
+          class="header__navigation-uses header__navigation-item"
+          href="uses.html"
+          >uses</a
+        >
       </nav>
     </header>
 
-    <main>
-      <h1>About</h1>
-      <article class="about">
-        <h2>Intro</h2>
-        <p class="intro">
-          My name is Mikhail and my usernames are <i>wawowewo</i> and
-          <i>hikkiyomi</i>.
-          <br />
-          I reside in Saint Petersburg, Russia.
-          <br />
-          I am a former Yandex intern who worked at the Yandex Ads Department.
-          Right now I am taking part in Route256 courses by Ozon which are about
-          Go development.
-        </p>
+    <main class="main">
+      <h1 class="main__title">About</h1>
+      <div class="main__content">
+        <article class="main__about-article main__about-item">
+          <h2 class="main__about-title">Intro</h2>
+          <p class="main__about-intro">
+            My name is Mikhail and my usernames are <i>wawowewo</i> and
+            <i>hikkiyomi</i>.
+            <br />
+            I reside in Saint Petersburg, Russia.
+            <br />
+            I am a former Yandex intern who worked at the Yandex Ads Department.
+            <br />
+            Right now I am taking part in Route256 courses by Ozon which are
+            about Go development.
+          </p>
 
-        <h2>Experience</h2>
-        <p class="experience">
-          I am a passionate backend developer who strives to learn adjacent
-          spheres right now.
-          <br />
-          I was a competitive programmer in past and have participated in many
-          contests.
-          <br />
-          I have an experience with many different programming languages and
-          technologies, including
-          <b>C++</b>, <b>Go</b>, <b>Python</b>, <b>C#</b>, <b>Java</b>
-          <strong>(with Spring)</strong>.
-          <br />
-          I want to become proficient in <em>Frontend Development</em> and
-          <em>DevOps</em>.
-        </p>
+          <h2 class="main__about-title">Experience</h2>
+          <p class="main__about-experience">
+            I am a passionate backend developer who strives to learn adjacent
+            spheres right now.
+            <br />
+            I was a competitive programmer in past and have participated in many
+            contests.
+            <br />
+            I have an experience with many different programming languages and
+            technologies, including
+            <b>C++</b>, <b>Go</b>, <b>Python</b>, <b>C#</b>, <b>Java</b>
+            <strong>(with Spring)</strong>.
+            <br />
+            I want to become proficient in <em>Frontend Development</em> and
+            <em>DevOps</em>.
+          </p>
 
-        <h2>Preferences</h2>
-        <p class="preferences">
-          I love Linux and its philosophy. I want to learn more about this OS.
-          <br />
-          I absolutely love building cool things especially if they are really
-          useful.
-          <br />
-          I love music! I have a variety of different playlists on my Spotify.
-        </p>
-      </article>
+          <h2 class="main__about-title">Preferences</h2>
+          <p class="main__about-preferences">
+            I love Linux and its philosophy. I want to learn more about this OS.
+            <br />
+            I absolutely love building cool things especially if they are really
+            useful.
+            <br />
+            I love music! I have a variety of different playlists on my Spotify.
+          </p>
+        </article>
+
+        <div class="main__about-item main__about-pic-block">
+          <img
+            class="main__about-pic main__about-pic-shadow"
+            src="assets/about-pic.jpg"
+          />
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/wawowewo">telegram</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a
+          class="footer__navigation-telegram footer__navigation-item"
+          href="https://t.me/wawowewo"
+          >telegram</a
+        >
       </nav>
     </footer>
   </body>

@@ -5,28 +5,47 @@
     <meta name="keywords" content="github,portfolio,frontend,projects" />
     <meta name="description" content="page of the projects that i made" />
     <title>wawowewo @ projects</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">logo</a>
-      </nav>
-
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="uses.html">uses</a>
+    <header class="header">
+      <nav class="header__navigation">
+        <a
+          class="header__navigation-logo header__navigation-item"
+          href="index.html"
+          >logo</a
+        >
+        <a
+          class="header__navigation-about header__navigation-item"
+          href="about.html"
+          >about</a
+        >
+        <a
+          class="header__navigation-projects header__navigation-item"
+          href="projects.html"
+          >projects</a
+        >
+        <a
+          class="header__navigation-uses header__navigation-item"
+          href="uses.html"
+          >uses</a
+        >
       </nav>
     </header>
 
-    <main>
-      <h1>My Projects</h1>
-      <aside>
+    <main class="main">
+      <h1 class="main__title">My Projects</h1>
+      <aside class="main__aside">
         You can find my projects on my
-        <a href="https://github.com/hikkiyomi">Github</a>
+        <a
+          class="main__aside-item main__aside-link"
+          href="https://github.com/hikkiyomi"
+          >Github</a
+        >
 
-        <pre>
+        <pre class="main__aside-item main__aside-code">
           <code>
 func main() {
     fmt.Println("Hey!")
@@ -35,16 +54,16 @@ func main() {
         </pre>
       </aside>
 
-      <section class="projects">
-        <ol>
-          <li>
+      <section class="main__section">
+        <ol class="main__section-projects">
+          <li class="main__section-projects-item">
             Passman - a CLI/TUI app for managing your passwords. Written in Go.
           </li>
-          <li>
+          <li class="main__section-projects-item">
             Speed Type Test - a TUI app for testing your type speed. Written in
             Go.
           </li>
-          <li>
+          <li class="main__section-projects-item">
             Sirius3D - an app for 3D modelling with multiplayer, ray tracing and
             VR. Written in C# and Unity.
           </li>
@@ -52,9 +71,13 @@ func main() {
       </section>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/wawowewo">telegram</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a
+          class="footer__navigation-telegram footer__navigation-item"
+          href="https://t.me/wawowewo"
+          >telegram</a
+        >
       </nav>
     </footer>
   </body>
