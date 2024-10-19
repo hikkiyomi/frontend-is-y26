@@ -5,4 +5,11 @@
 
 .main__aside-code code {
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+
+.main__section {
+  padding: 5px;
+  border-style: outset;
+  margin-bottom: 10px;
 }
