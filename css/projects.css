@@ -1,0 +1,8 @@
+.main__aside-code {
+  background-color: #faf6e2;
+  color: #f06060;
+}
+
+.main__aside-code code {
+  font-family: "Courier New", Courier, monospace;
+}

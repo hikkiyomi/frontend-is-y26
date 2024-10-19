@@ -1,0 +1,7 @@
+.main__about-pic {
+  width: 400px;
+}
+
+.main__about-pic-shadow {
+  filter: drop-shadow(20px 10px 8px #5c4b51);
+}
