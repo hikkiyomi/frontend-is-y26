@@ -1,12 +1,12 @@
 (function () {
-  let startTime = performance.now();
+  const startTime = performance.now();
 
   window.onload = () => {
-    let endTime = performance.now();
-    let loadTime = (endTime - startTime) / 1000;
+    const endTime = performance.now();
+    const loadTime = (endTime - startTime) / 1000;
 
-    let element = document.getElementById("page-load-time");
-    let text = document.createTextNode(`Page load time: ${loadTime}`);
+    const element = document.getElementById("page-load-time");
+    const text = document.createTextNode(`Page load time: ${loadTime}`);
 
     element.appendChild(text);
   };
