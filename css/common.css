@@ -70,3 +70,11 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+
+.footer__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 3px;
+}
