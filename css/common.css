@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../assets/JetBrainsMono-Regular.ttf");
+}
+
 a {
   text-transform: capitalize;
   text-decoration: none;
@@ -12,7 +17,7 @@ body {
 }
 
 html {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "JetBrains Mono";
   font-size: 14px;
   line-height: normal;
 
@@ -64,4 +69,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.footer__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 3px;
+}
+
+.nav__item {
+  transition: color 0.25s ease;
+}
+
+.nav__item:hover {
+  color: white;
 }

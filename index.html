@@ -10,28 +10,29 @@
     <title>wawowewo @ index</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/pageLoad.js"></script>
   </head>
 
   <body>
     <header class="header">
       <nav class="header__navigation">
         <a
-          class="header__navigation-logo header__navigation-item"
+          class="header__navigation-logo header__navigation-item nav__item"
           href="index.html"
           >logo</a
         >
         <a
-          class="header__navigation-about header__navigation-item"
+          class="header__navigation-about header__navigation-item nav__item"
           href="about.html"
           >about</a
         >
         <a
-          class="header__navigation-projects header__navigation-item"
+          class="header__navigation-projects header__navigation-item nav__item"
           href="projects.html"
           >projects</a
         >
         <a
-          class="header__navigation-uses header__navigation-item"
+          class="header__navigation-uses header__navigation-item nav__item"
           href="uses.html"
           >uses</a
         >
@@ -39,6 +40,15 @@
     </header>
 
     <main class="main">
+      <section class="main__section">
+        <div class="main__section-quoteblock">
+          <p class="main__section-quote">
+            <q>If we all work together, we can totally disrupt the system.</q>
+            — <cite>Ashleigh Brilliant</cite>
+          </p>
+        </div>
+      </section>
+
       <div class="main__intro">
         <h2 class="main__intro-item">Hello, I'm</h2>
         <h1 class="main__intro-item">Mikhail Mefodyev</h1>
@@ -70,25 +80,17 @@
           <div class="main__section-table-item">row2 col2 info</div>
         </div>
       </section>
-
-      <section class="main__section">
-        <div class="main__section-quoteblock">
-          <p class="main__section-quote">
-            <q>If we all work together, we can totally disrupt the system.</q>
-            — <cite>Ashleigh Brilliant</cite>
-          </p>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
       <nav class="footer__navigation">
         <a
-          class="footer__navigation-telegram footer__navigation-item"
+          class="footer__navigation-telegram footer__navigation-item nav__item"
           href="https://t.me/wawowewo"
           >telegram</a
         >
       </nav>
+      <div class="footer__timer" id="page-load-time"></div>
     </footer>
   </body>
 </html>
