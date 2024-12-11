@@ -79,10 +79,10 @@ body {
   margin-top: 3px;
 }
 
-.nav__item-onmouseover {
-  transition: color 0.5s ease;
+.nav__item {
+  transition: color 0.25s ease;
 }
 
-.nav__item-onmouseover:hover {
+.nav__item:hover {
   color: white;
 }
