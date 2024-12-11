@@ -1,0 +1,9 @@
+.main__section-quoteblock {
+  display: flex;
+  position: absolute;
+
+  width: 90%;
+  bottom: 50px;
+
+  justify-content: center;
+}
