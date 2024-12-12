@@ -13,9 +13,6 @@ const decorateNavCurrentPage = () => {
   const elements = document.querySelectorAll(".nav__item");
 
   elements.forEach((element) => {
-    console.log(element.href);
-    console.log(location);
-
     if (element.href === location) {
       element.style.textDecoration = "underline";
       element.style.textDecorationThickness = "3px";
@@ -26,8 +23,8 @@ const decorateNavCurrentPage = () => {
 (function () {
   const startTime = performance.now();
 
-  window.onload = () => {
+  window.addEventListener("load", () => {
     measureLoadTime(startTime);
     decorateNavCurrentPage();
-  };
+  });
 })();
