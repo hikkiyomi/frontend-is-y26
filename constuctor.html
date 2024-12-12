@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="github,portfolio,frontend,constructor" />
+    <meta name="description" content="constructor for task 5" />
+    <title>wawowewo @ constructor</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/constructor.css" />
+    <script src="js/pageLoad.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a
+          class="header__navigation-logo header__navigation-item nav__item"
+          href="index.html"
+          >logo</a
+        >
+        <a
+          class="header__navigation-about header__navigation-item nav__item"
+          href="about.html"
+          >about</a
+        >
+        <a
+          class="header__navigation-projects header__navigation-item nav__item"
+          href="projects.html"
+          >projects</a
+        >
+        <a
+          class="header__navigation-uses header__navigation-item nav__item"
+          href="uses.html"
+          >uses</a
+        >
+        <a
+          class="header__navigation-uses header__navigation-item nav__item"
+          href="constuctor.html"
+          >constructor</a
+        >
+      </nav>
+    </header>
+
+    <main class="main">
+      <form class="main__form">
+        <div class="main__form-text">
+          <h2 class="main__form-label">Create a schedule</h2>
+        </div>
+
+        <label for="task-description">Enter task description</label>
+        <input
+          class="main__form-elem"
+          type="text"
+          id="form-input"
+          name="form-input"
+        />
+
+        <select
+          class="main__form-elem"
+          name="form-day-select"
+          id="form-day-select"
+        >
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+
+        <button class="main__form-elem" type="submit">Submit</button>
+      </form>
+
+      <div class="main__schedule">
+        <div class="main__schedule-elem main__schedule-day">Monday</div>
+        <div class="main__schedule-elem main__schedule-day">Tuesday</div>
+        <div class="main__schedule-elem main__schedule-day">Wednesday</div>
+        <div class="main__schedule-elem main__schedule-day">Thursday</div>
+        <div class="main__schedule-elem main__schedule-day">Friday</div>
+        <div class="main__schedule-elem main__schedule-day">Saturday</div>
+        <div class="main__schedule-elem main__schedule-day">Sunday</div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a
+          class="footer__navigation-telegram footer__navigation-item nav__item"
+          href="https://t.me/wawowewo"
+          >telegram</a
+        >
+      </nav>
+      <div class="footer__timer" id="page-load-time"></div>
+    </footer>
+  </body>
+</html>
