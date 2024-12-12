@@ -16,7 +16,7 @@ const decorateNavCurrentPage = () => {
     console.log(element.href);
     if (
       element.href === location ||
-      (document.location.pathname === "/" &&
+      (document.location.pathname.endsWith("/") &&
         element.href.split("/").at(-1) === "index.html")
     ) {
       element.classList.add("nav__item__active");
