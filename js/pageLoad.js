@@ -13,11 +13,10 @@ const decorateNavCurrentPage = () => {
   const elements = document.querySelectorAll(".nav__item");
 
   elements.forEach((element) => {
-    console.log(element.href);
     if (
       element.href === location ||
       (document.location.pathname.endsWith("/") &&
-        element.href.split("/").at(-1) === "index.html")
+        element.href.endsWith("index.html"))
     ) {
       element.classList.add("nav__item__active");
     }
