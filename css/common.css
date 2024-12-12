@@ -86,3 +86,8 @@ body {
 .nav__item:hover {
   color: white;
 }
+
+.nav__item__active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}

@@ -13,12 +13,12 @@ const decorateNavCurrentPage = () => {
   const elements = document.querySelectorAll(".nav__item");
 
   elements.forEach((element) => {
-    console.log(element.href);
-    console.log(location);
-
-    if (element.href === location) {
-      element.style.textDecoration = "underline";
-      element.style.textDecorationThickness = "3px";
+    if (
+      element.href === location ||
+      (document.location.pathname.endsWith("/") &&
+        element.href.endsWith("index.html"))
+    ) {
+      element.classList.add("nav__item__active");
     }
   });
 };
@@ -26,8 +26,8 @@ const decorateNavCurrentPage = () => {
 (function () {
   const startTime = performance.now();
 
-  window.onload = () => {
+  window.addEventListener("load", () => {
     measureLoadTime(startTime);
     decorateNavCurrentPage();
-  };
+  });
 })();
