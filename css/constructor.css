@@ -8,6 +8,8 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
   gap: 10px;
+
+  margin-bottom: 15px;
 }
 
 .main__form {
@@ -21,8 +23,8 @@
 
 .main__schedule-elem {
   display: flex;
-  padding: 5px;
 
+  padding: 5px;
   border-style: solid;
   border-radius: 10px;
 
