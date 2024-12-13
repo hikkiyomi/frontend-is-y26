@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  min-height: 10%;
+}
+
+.main__header {
+  align-self: center;
+}
+
+.main__todo {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 1em;
+}
+
+.main__todo-preloader {
+  display: flex;
+
+  margin: auto;
+
+  height: 10%;
+  width: auto;
+}
+
+.main__todo-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.main__todo-board-elem {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border-style: solid;
+  border-radius: 10px;
+}
