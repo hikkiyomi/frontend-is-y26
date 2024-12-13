@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="github,portfolio,frontend" />
-    <meta
-      name="description"
-      content="a small portfolio for showcasing skills"
-    />
+    <meta name="keywords" content="github,portfolio,frontend,favorite" />
+    <meta name="description" content="gallery of favorite pics" />
     <title>wawowewo @ index</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/swiper.css" />
     <script src="js/pageLoad.js"></script>
 
+    <!-- Use Swiper from CDN -->
+    <!-- Use-case: nice-looking gallery with a carousel of pictures -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -21,12 +20,17 @@
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
+      // swiper instance with the corresponding class and its parameters
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
+
+        // pagination params: the corresponding class and type of bullet-points
         pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
         },
+
+        // navigation params: corresponding classes for the next and previous element
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
