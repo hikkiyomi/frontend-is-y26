@@ -9,8 +9,32 @@
     />
     <title>wawowewo @ index</title>
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <script src="js/pageLoad.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        centeredSlides: true,
+        updateOnWindowResize: true,
+      });
+    </script>
   </head>
 
   <body>
@@ -54,7 +78,24 @@
       </nav>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" src="assets/favorite/0.png" />
+          <img class="swiper-slide" src="assets/favorite/1.png" />
+          <img class="swiper-slide" src="assets/favorite/2.png" />
+          <img class="swiper-slide" src="assets/favorite/3.png" />
+          <img class="swiper-slide" src="assets/favorite/4.jpg" />
+          <img class="swiper-slide" src="assets/favorite/5.png" />
+          <img class="swiper-slide" src="assets/favorite/6.jpg" />
+          <img class="swiper-slide" src="assets/favorite/7.jpg" />
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
 
     <footer class="footer">
       <nav class="footer__navigation">
