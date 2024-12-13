@@ -1,5 +1,6 @@
 function fetchTodos(url) {
   return new Promise((resolve, reject) => {
+    // Imitate some 'hard' work by setting 1s delay.
     setTimeout(async () => {
       try {
         const response = await fetch(url);
