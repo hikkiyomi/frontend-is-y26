@@ -19,17 +19,69 @@ function fetchTodos(url) {
         console.error(`couldn't fetch data: ${err.message}`);
         reject(err);
       }
-    }, 10000);
+    }, 1000);
   });
 }
 
-function renderBoard(tasks) {
+function getSample(arr, size) {
+  const chosen = new Set();
+  const result = new Array();
+
+  const pickRandomIndex = (length) =>
+    Math.floor(Math.random() * length) % length;
+
+  for (let iter = 0; iter < size; iter++) {
+    let choice = pickRandomIndex(arr.length);
+
+    while (chosen.has(choice)) {
+      choice = pickRandomIndex(arr.length);
+    }
+
+    result.push(arr[choice]);
+    chosen.add(choice);
+  }
+
+  return result;
+}
+
+function renderTask(container, freeRow, task) {
+  const elem = document.createElement("div");
+
+  elem.innerText = task.title;
+  elem.classList.add("main__todo-board-elem");
+
+  let column = null;
+
+  if (task.completed) {
+    column = randomBetween(4, 6);
+  } else {
+    column = randomBetween(1, 4);
+  }
+
+  elem.style.gridColumn = column;
+  freeRow[column]++;
+  elem.style.gridRow = freeRow[column] + 1;
+
+  container.appendChild(elem);
+}
+
+function renderBoard(tasks, amount) {
+  const freeRow = new Array(6).fill(0);
+  const container = document.querySelectorAll(".main__todo-board")[0];
+
   const preloader = document.querySelectorAll(".main__todo-preloader")[0];
   preloader.style.display = "none";
+
+  sample = getSample(tasks, amount);
+  sample.forEach((task) => renderTask(container, freeRow, task));
+}
+
+function randomBetween(a, b) {
+  return Math.floor(a + Math.random() * (b - a));
 }
 
 (function () {
   const url = "https://jsonplaceholder.typicode.com/todos";
 
-  fetchTodos(url).then((json) => renderBoard(json));
+  fetchTodos(url).then((json) => renderBoard(json, randomBetween(10, 20)));
 })();
