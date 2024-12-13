@@ -18,13 +18,20 @@
   min-height: 1em;
 }
 
+.main__todo--centered {
+  margin: auto;
+}
+
 .main__todo-preloader {
   display: flex;
 
-  margin: auto;
-
   height: 10%;
   width: auto;
+}
+
+.main__todo-error {
+  display: none;
+  color: red;
 }
 
 .main__todo-board {
@@ -43,4 +50,20 @@
   padding: 5px;
   border-style: solid;
   border-radius: 10px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: lime;
 }

@@ -12,11 +12,11 @@ function fetchTodos(url) {
           const json = await response.json();
           resolve(json);
         } catch (err) {
-          console.error(`couldn't parse json: ${err.message}`);
+          console.error(`Couldn't parse json: ${err.message}`);
           reject(err);
         }
       } catch (err) {
-        console.error(`couldn't fetch data: ${err.message}`);
+        console.error(`Couldn't fetch data: ${err.message}`);
         reject(err);
       }
     }, 1000);
@@ -69,11 +69,24 @@ function renderBoard(tasks, amount) {
   const freeRow = new Array(6).fill(0);
   const container = document.querySelectorAll(".main__todo-board")[0];
 
-  const preloader = document.querySelectorAll(".main__todo-preloader")[0];
-  preloader.style.display = "none";
-
   sample = getSample(tasks, amount);
   sample.forEach((task) => renderTask(container, freeRow, task));
+}
+
+function renderError(err) {
+  const container = document.querySelectorAll(".main__todo-error")[0];
+  container.style.display = "block";
+
+  const element = document.createTextNode(
+    `⚠ Something went wrong: ${err.message}`
+  );
+
+  container.appendChild(element);
+}
+
+function hidePreloader() {
+  const preloader = document.querySelectorAll(".main__todo-preloader")[0];
+  preloader.style.display = "none";
 }
 
 function randomBetween(a, b) {
@@ -81,7 +94,13 @@ function randomBetween(a, b) {
 }
 
 (function () {
+  // Fetching data from this URL will render an error.
+  // const url = "http://non-existent-site";
+
   const url = "https://jsonplaceholder.typicode.com/todos";
 
-  fetchTodos(url).then((json) => renderBoard(json, randomBetween(10, 20)));
+  fetchTodos(url)
+    .then((json) => renderBoard(json, randomBetween(10, 20)))
+    .catch((err) => renderError(err))
+    .finally(hidePreloader);
 })();
