@@ -1,0 +1,64 @@
+.main {
+  justify-content: flex-start;
+}
+
+.main__header {
+  align-self: center;
+}
+
+.main__todo {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 15px;
+}
+
+.main__todo--centered {
+  margin: auto;
+}
+
+.main__todo-preloader {
+  display: flex;
+
+  height: 10%;
+  width: auto;
+}
+
+.main__todo-error {
+  display: none;
+  color: red;
+}
+
+.main__todo-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.main__todo-board-elem {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: lime;
+}

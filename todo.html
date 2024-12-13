@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="github,portfolio,frontend,projects" />
-    <meta name="description" content="page of the projects that i made" />
-    <title>wawowewo @ projects</title>
+    <meta name="keywords" content="github,portfolio,frontend,todo" />
+    <meta name="description" content="todo list" />
+    <title>wawowewo @ todo</title>
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/todo.css" />
     <script src="js/pageLoad.js"></script>
+    <script src="js/todo.js"></script>
   </head>
-
   <body>
     <header class="header">
       <nav class="header__navigation">
@@ -47,39 +47,33 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title">My Projects</h1>
-      <aside class="main__aside">
-        You can find my projects on my
-        <a
-          class="main__aside-item main__aside-link"
-          href="https://github.com/hikkiyomi"
-          >Github</a
-        >
+      <h1 class="main__elem main__header">Kanban Board</h1>
 
-        <pre class="main__aside-item main__aside-code">
-          <code>
-func main() {
-    fmt.Println("Hey!")
-}
-          </code>
-        </pre>
-      </aside>
+      <div class="main__elem main__todo">
+        <div class="main__todo-elem main__todo-board">
+          <div class="main__todo-board-elem main__todo-board-header gray">
+            Backlog
+          </div>
+          <div class="main__todo-board-elem main__todo-board-header yellow">
+            Todo
+          </div>
+          <div class="main__todo-board-elem main__todo-board-header orange">
+            In Progress
+          </div>
+          <div class="main__todo-board-elem main__todo-board-header green">
+            Done
+          </div>
+          <div class="main__todo-board-elem main__todo-board-header gray">
+            History
+          </div>
+        </div>
+      </div>
 
-      <section class="main__section main__section-projects">
-        <div class="main__section-projects-item">
-          Passman - a CLI/TUI app for managing your passwords. Written in Go.
-        </div>
-        <div class="main__section-projects-item">
-          Speed Type Test - a TUI app for testing your type speed. Written in
-          Go.
-        </div>
-        <div class="main__section-projects-item">
-          Sirius3D - an app for 3D modelling with multiplayer, ray tracing and
-          VR. Written in C# and Unity.
-        </div>
-        <div class="main__section-projects-item">Stub</div>
-        <div class="main__section-projects-item">Another stub</div>
-      </section>
+      <img
+        src="https://i.pinimg.com/originals/28/25/e6/2825e6e29ba05f90e899525c82c0927c.gif"
+        class="main__elem main__todo-preloader main__todo--centered"
+      />
+      <div class="main__elem main__todo-error main__todo--centered"></div>
     </main>
 
     <footer class="footer">
